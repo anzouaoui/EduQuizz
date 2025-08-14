@@ -59,6 +59,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: QuizPageWidget.routeName,
           path: QuizPageWidget.routePath,
           builder: (context, params) => QuizPageWidget(),
+        ),
+        FFRoute(
+          name: ClassResultPageWidget.routeName,
+          path: ClassResultPageWidget.routePath,
+          builder: (context, params) => ClassResultPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
